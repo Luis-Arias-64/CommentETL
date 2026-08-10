@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-CommentETL.Worker-c3f86eb4-d624-4ea3-bf46-c3a05d9c8f52</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CommentETL.Application\CommentETL.Application.csproj" />
+    <ProjectReference Include="..\CommentETL.Infraestructure\CommentETL.Infraestructure.csproj" />
+    <ProjectReference Include="..\CommentETL.Domain\CommentETL.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- La carpeta /data vive en la raíz de la solución (fuera de este proyecto).
+         La copiamos al directorio de salida como "data/" para que las rutas
+         relativas de appsettings.json (CsvPaths) funcionen al ejecutar el Worker. -->
+    <Content Include="..\data\**\*.csv">
+      <Link>data\%(RecursiveDir)%(Filename)%(Extension)</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

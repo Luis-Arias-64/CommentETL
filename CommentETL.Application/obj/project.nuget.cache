@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Kqgu/lyl+i9AbVkIcKDiw0yQ6s8Q96VqdJJTtHDqYPF8RtWMbWkLNn/3Ko6dGAj9iZLETnG9uBweP7sH/m+Snw==",
+  "success": true,
+  "projectFilePath": "/home/luis/Desktop/Materias/cuatrimestre_6/elective-1/CommentETL-Extract/CommentETL/CommentETL.Application/CommentETL.Application.csproj",
+  "expectedPackageFiles": [
+    "/home/luis/.nuget/packages/csvhelper/33.0.1/csvhelper.33.0.1.nupkg.sha512",
+    "/home/luis/.nuget/packages/dapper/2.1.35/dapper.2.1.35.nupkg.sha512"
+  ],
+  "logs": []
+}
