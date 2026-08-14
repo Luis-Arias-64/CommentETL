@@ -1,30 +1,30 @@
 using ETL.SPC.Application.Extract.Interfaces;
 using ETL.SPC.Domain.Base;
 using System.Text.Json;
+using Microsoft.Extensions.Logging;
 
 namespace ETL.SPC.Application.Extract.Api
 {
-    public class ApiCommentExtractor : IExtractor<CommentRaw>
+    public class ApiCommentExtractor : IExtractorExternal<CommentRaw>
     {
         private readonly IApiClient _client;
+        private readonly ILogger<ApiCommentExtractor> _logger;
 
         private static readonly JsonSerializerOptions JsonOptions = new()
         {
             PropertyNameCaseInsensitive = true
         };
 
-        public ApiCommentExtractor(IApiClient client)
+        public ApiCommentExtractor(IApiClient client, ILogger<ApiCommentExtractor> logger)
         {
             _client = client;
+            _logger = logger;
         }
 
-        public async Task<IEnumerable<CommentRaw>> ExtractAsync()
+        public async Task<IQueryable<CommentRaw>> ExtractAsync()
         {
             try
             {
-                // /api/all trae los 3 tipos de comentario (social, surveys, web-reviews)
-                // en una sola llamada, tal como recomienda la documentación de la API
-                // para minimizar round-trips.
                 var json = await _client.GetAsync("/api/all");
 
                 var data = JsonSerializer.Deserialize<AllResponse>(json, JsonOptions) ?? new AllResponse();
@@ -61,23 +61,14 @@ namespace ETL.SPC.Application.Extract.Api
                     Rating = r.Rating
                 });
 
-                return socialComments.Concat(surveys).Concat(webReviews).ToList();
+                return socialComments.Concat(surveys).Concat(webReviews).AsQueryable();
             }
             catch (HttpRequestException ex)
             {
-                // No detenemos toda la extracción si la API externa falla;
-                // se registra y se continúa con las demás fuentes.
-                Console.WriteLine($"Error consultando la API de comentarios: {ex.Message}");
-                return new List<CommentRaw>();
+                _logger.LogError(ex, "Enviando correo al administrador: Error consultando la API de comentarios");
+                return new List<CommentRaw>().AsQueryable();
             }
         }
-
-        // DTOs internos que mapean el contrato JSON documentado en
-        // API_CSV_INGEST_CONSUMO.md (campos en camelCase). Solo se declaran los 3
-        // datasets de comentarios que nos interesan; "products"/"clients"/"sources"
-        // del payload de /api/all se ignoran (System.Text.Json descarta propiedades
-        // no mapeadas por defecto) porque esos maestros ya se extraen de los CSV.
-
         private class AllResponse
         {
             public List<SocialCommentApiRow> SocialComments { get; set; } = new();
@@ -88,7 +79,7 @@ namespace ETL.SPC.Application.Extract.Api
         private class SocialCommentApiRow
         {
             public string IdComment { get; set; } = string.Empty;
-            public string? IdCliente { get; set; } // puede venir null (~44% de las filas, según la doc)
+            public string? IdCliente { get; set; } // puede venir null
             public string IdProducto { get; set; } = string.Empty;
             public string Fuente { get; set; } = string.Empty;
             public DateTime Fecha { get; set; }

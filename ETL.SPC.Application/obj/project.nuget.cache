@@ -1,11 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "fq6LWyvFu2ovnTte3WZg0XLMyAKsMqbiz1tchxPVqVHv9ZUZ8EBbxNhdGRoRqpEhWh1MzLLi6Aegkd7sWPBeVA==",
+  "dgSpecHash": "4JBNtoBDj3nqCcT9PtbcASfY6LcGtyo0lOqVH2M6nga+AmRRoKrcIrwancbfXvA+g4HqDFICPKhCr61rv+XOFA==",
   "success": true,
   "projectFilePath": "/home/luis/Desktop/Materias/cuatrimestre_6/elective-1/arquitecturaETL/ETL.SPC/ETL.SPC.Application/ETL.SPC.Application.csproj",
   "expectedPackageFiles": [
     "/home/luis/.nuget/packages/csvhelper/33.0.1/csvhelper.33.0.1.nupkg.sha512",
-    "/home/luis/.nuget/packages/dapper/2.1.35/dapper.2.1.35.nupkg.sha512"
+    "/home/luis/.nuget/packages/dapper/2.1.35/dapper.2.1.35.nupkg.sha512",
+    "/home/luis/.nuget/packages/microsoft.extensions.dependencyinjection/8.0.1/microsoft.extensions.dependencyinjection.8.0.1.nupkg.sha512",
+    "/home/luis/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.2/microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
+    "/home/luis/.nuget/packages/microsoft.extensions.logging/8.0.1/microsoft.extensions.logging.8.0.1.nupkg.sha512",
+    "/home/luis/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.2/microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
+    "/home/luis/.nuget/packages/microsoft.extensions.options/8.0.2/microsoft.extensions.options.8.0.2.nupkg.sha512",
+    "/home/luis/.nuget/packages/microsoft.extensions.primitives/8.0.0/microsoft.extensions.primitives.8.0.0.nupkg.sha512"
   ],
   "logs": []
 }

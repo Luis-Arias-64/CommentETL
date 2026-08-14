@@ -1,5 +1,6 @@
 using ETL.SPC.Application.Load.Interfaces;
 using Npgsql;
+using Microsoft.Extensions.Logging;
 
 namespace ETL.SPC.Infraestructure.Load
 {
@@ -9,12 +10,21 @@ namespace ETL.SPC.Infraestructure.Load
     {
         public static async Task<NpgsqlConnection> OpenAsync(IDwhConnectionFactory factory)
         {
+            try
+            {
+                var connection = (NpgsqlConnection)factory.CreateConnection();
+                await connection.OpenAsync();
+                return connection;    
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Correo al administrador: " + ex.Message);
+                throw;
+            }
             // IDwhConnectionFactory devuelve IDbConnection para no acoplar la interfaz
             // de Application a Npgsql, pero el COPY binario es una característica
             // específica de Npgsql, así que se castea aquí adentro de Infraestructure.
-            var connection = (NpgsqlConnection)factory.CreateConnection();
-            await connection.OpenAsync();
-            return connection;
+            
         }
 
         public static async Task TruncateAsync(NpgsqlConnection connection, string table)
@@ -26,8 +36,16 @@ namespace ETL.SPC.Infraestructure.Load
             // (ver ScriptDWH.sql), y Postgres bloquea el TRUNCATE de una tabla referenciada
             // aunque la tabla que referencia esté vacía. CASCADE también vacía
             // fact.factopinion, lo cual es correcto en un full-reload de dimensiones.
-            await using var command = new NpgsqlCommand($"TRUNCATE TABLE {table} CASCADE;", connection);
-            await command.ExecuteNonQueryAsync();
+            try
+            {
+                await using var command = new NpgsqlCommand($"TRUNCATE TABLE {table} CASCADE;", connection);
+                await command.ExecuteNonQueryAsync();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Correo al administrador: " + ex.Message);
+                throw;
+            }
         }
     }
 }

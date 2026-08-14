@@ -1,7 +1,6 @@
 namespace ETL.SPC.Domain.Base
 {
     // Salida de Transform para comentarios/opiniones. Usa claves naturales
-    // (ClientId/ProductId como int), no las SK del DWH — esas las resuelve Load.
     public class CommentClean
     {
         public string SourceType { get; set; } = string.Empty; // Survey | Web | Social | DB | Api

@@ -1,15 +1,18 @@
 using ETL.SPC.Application.Extract.Interfaces;
 using ETL.SPC.Domain.Base;
+using Microsoft.Extensions.Logging;
 
 namespace ETL.SPC.Application.Extract.Csv
 {
     public class SocialCommentExtractor : IExtractor<CommentRaw>
     {
+        private readonly ILogger<SocialCommentExtractor> _logger;
         private readonly string _path;
 
-        public SocialCommentExtractor(string path)
+        public SocialCommentExtractor(string path, ILogger<SocialCommentExtractor> logger)
         {
             _path = path;
+            _logger = logger;
         }
 
         public Task<IEnumerable<CommentRaw>> ExtractAsync()
@@ -32,7 +35,7 @@ namespace ETL.SPC.Application.Extract.Csv
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Enviando correo al administrador: Error extracting social comments from CSV file: {ex.Message}");
+                _logger.LogError(ex, "Enviando correo al administrador: Error extracting social comments from CSV file");
                 return Task.FromResult(Enumerable.Empty<CommentRaw>());
             }
         }

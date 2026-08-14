@@ -1,15 +1,18 @@
 using ETL.SPC.Application.Extract.Interfaces;
 using ETL.SPC.Domain.Base;
+using Microsoft.Extensions.Logging;
 
 namespace ETL.SPC.Application.Extract.Csv
 {
     public class ProductExtractor : IExtractor<ProductRaw>
     {
+        private readonly ILogger<ProductExtractor> _logger;
         private readonly string _path;
 
-        public ProductExtractor(string path)
+        public ProductExtractor(string path, ILogger<ProductExtractor> logger)
         {
             _path = path;
+            _logger = logger;
         }
 
         public Task<IEnumerable<ProductRaw>> ExtractAsync()
@@ -29,7 +32,7 @@ namespace ETL.SPC.Application.Extract.Csv
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Enviando correo al administrador: Error extracting products from CSV file: {ex.Message}");
+                _logger.LogError(ex, "Enviando correo al administrador: Error extracting products from CSV file");
                 return Task.FromResult(Enumerable.Empty<ProductRaw>());
             }
         }

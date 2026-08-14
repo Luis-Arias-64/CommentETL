@@ -1,15 +1,18 @@
 using ETL.SPC.Application.Extract.Interfaces;
 using ETL.SPC.Domain.Base;
+using Microsoft.Extensions.Logging;
 
 namespace ETL.SPC.Application.Extract.Csv
 {
     public class WebReviewExtractor : IExtractor<CommentRaw>
     {
+        private readonly ILogger<WebReviewExtractor> _logger;
         private readonly string _path;
 
-        public WebReviewExtractor(string path)
+        public WebReviewExtractor(string path, ILogger<WebReviewExtractor> logger)
         {
             _path = path;
+            _logger = logger;
         }
 
         public Task<IEnumerable<CommentRaw>> ExtractAsync()
@@ -31,7 +34,7 @@ namespace ETL.SPC.Application.Extract.Csv
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Enviando correo al administrador: Error extracting web reviews from CSV file: {ex.Message}");
+                _logger.LogError(ex, "Enviando correo al administrador: Error extracting web reviews from CSV file");
                 return Task.FromResult(Enumerable.Empty<CommentRaw>());
             }
         }

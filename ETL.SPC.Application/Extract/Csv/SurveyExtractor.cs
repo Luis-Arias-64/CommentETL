@@ -1,15 +1,17 @@
 using ETL.SPC.Application.Extract.Interfaces;
 using ETL.SPC.Domain.Base;
-
+using Microsoft.Extensions.Logging;
 namespace ETL.SPC.Application.Extract.Csv
 {
     public class SurveyExtractor : IExtractor<CommentRaw>
     {
+        private readonly ILogger<SurveyExtractor> _logger;
         private readonly string _path;
 
-        public SurveyExtractor(string path)
+        public SurveyExtractor(string path, ILogger<SurveyExtractor> logger)
         {
             _path = path;
+            _logger = logger;
         }
 
         public Task<IEnumerable<CommentRaw>> ExtractAsync()
@@ -34,7 +36,7 @@ namespace ETL.SPC.Application.Extract.Csv
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Enviando correo al administrador: Error extracting survey comments from CSV file: {ex.Message}");
+                _logger.LogError(ex, "Enviando correo al administrador: Error extracting survey comments from CSV file");
                 return Task.FromResult(Enumerable.Empty<CommentRaw>());
             }
         }

@@ -2,6 +2,7 @@ using System.Globalization;
 using System.Text;
 using CsvHelper;
 using CsvHelper.Configuration;
+using Microsoft.Extensions.Logging;
 
 namespace ETL.SPC.Application.Extract.Csv
 {
@@ -9,7 +10,7 @@ namespace ETL.SPC.Application.Extract.Csv
     // (delimitador, cultura, manejo de campos con comillas/comas embebidas)
     // para que los extractores no repitan este bloque cada uno.
     internal static class CsvFileReader
-    {
+    {    
         public static List<T> Read<T>(string path)
         {
             // dotnet run usa como directorio de trabajo la carpeta del proyecto,

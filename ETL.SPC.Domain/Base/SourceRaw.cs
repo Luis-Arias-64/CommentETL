@@ -1,6 +1,5 @@
 namespace ETL.SPC.Domain.Base
 {
-    // Representa una fila cruda de fuente_datos.csv, sin validar ni transformar.
     public class SourceRaw
     {
         public string SourceId { get; set; } = string.Empty;
