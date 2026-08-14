@@ -1,0 +1,46 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETL.SPC.Domain", "ETL.SPC.Domain\ETL.SPC.Domain.csproj", "{AD2882A7-3DFD-4AE7-81D7-B55E083F6DCC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETL.SPC.Application", "ETL.SPC.Application\ETL.SPC.Application.csproj", "{F653057B-241F-4A5D-9704-5C284E45F11F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETL.SPC.Infraestructure", "ETL.SPC.Infraestructure\ETL.SPC.Infraestructure.csproj", "{FC54A708-480D-46AD-B2DD-529E9A605371}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETL.SPC.Pipeline", "ETL.SPC.Pipeline\ETL.SPC.Pipeline.csproj", "{02C02809-462B-446F-95E5-AF1074B6B042}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETL.SPC.Worker", "ETL.SPC.Worker\ETL.SPC.Worker.csproj", "{49AC8C63-3788-4D9F-BEFC-C0FBAAE10955}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AD2882A7-3DFD-4AE7-81D7-B55E083F6DCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD2882A7-3DFD-4AE7-81D7-B55E083F6DCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD2882A7-3DFD-4AE7-81D7-B55E083F6DCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD2882A7-3DFD-4AE7-81D7-B55E083F6DCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F653057B-241F-4A5D-9704-5C284E45F11F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F653057B-241F-4A5D-9704-5C284E45F11F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F653057B-241F-4A5D-9704-5C284E45F11F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F653057B-241F-4A5D-9704-5C284E45F11F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC54A708-480D-46AD-B2DD-529E9A605371}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC54A708-480D-46AD-B2DD-529E9A605371}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC54A708-480D-46AD-B2DD-529E9A605371}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC54A708-480D-46AD-B2DD-529E9A605371}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02C02809-462B-446F-95E5-AF1074B6B042}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02C02809-462B-446F-95E5-AF1074B6B042}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02C02809-462B-446F-95E5-AF1074B6B042}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02C02809-462B-446F-95E5-AF1074B6B042}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49AC8C63-3788-4D9F-BEFC-C0FBAAE10955}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49AC8C63-3788-4D9F-BEFC-C0FBAAE10955}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49AC8C63-3788-4D9F-BEFC-C0FBAAE10955}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49AC8C63-3788-4D9F-BEFC-C0FBAAE10955}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

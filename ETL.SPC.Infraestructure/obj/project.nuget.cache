@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "L6bkACC9TJ1gDR/uAlR58QhNsMFh88GMXBznTl81HC/6B1IP7wAWLecYBvpDN0mgBfoTEDs2MBVImS7ytONHew==",
+  "success": true,
+  "projectFilePath": "/home/luis/Desktop/Materias/cuatrimestre_6/elective-1/arquitecturaETL/ETL.SPC/ETL.SPC.Infraestructure/ETL.SPC.Infraestructure.csproj",
+  "expectedPackageFiles": [
+    "/home/luis/.nuget/packages/csvhelper/33.0.1/csvhelper.33.0.1.nupkg.sha512",
+    "/home/luis/.nuget/packages/dapper/2.1.35/dapper.2.1.35.nupkg.sha512",
+    "/home/luis/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "/home/luis/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.0/microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "/home/luis/.nuget/packages/npgsql/8.0.5/npgsql.8.0.5.nupkg.sha512"
+  ],
+  "logs": []
+}

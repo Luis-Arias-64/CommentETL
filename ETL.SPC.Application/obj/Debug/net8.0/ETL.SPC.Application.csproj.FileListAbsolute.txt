@@ -1,0 +1,15 @@
+/home/luis/Desktop/Materias/cuatrimestre_6/elective-1/arquitecturaETL/ETL.SPC/ETL.SPC.Application/bin/Debug/net8.0/ETL.SPC.Application.deps.json
+/home/luis/Desktop/Materias/cuatrimestre_6/elective-1/arquitecturaETL/ETL.SPC/ETL.SPC.Application/bin/Debug/net8.0/ETL.SPC.Application.dll
+/home/luis/Desktop/Materias/cuatrimestre_6/elective-1/arquitecturaETL/ETL.SPC/ETL.SPC.Application/bin/Debug/net8.0/ETL.SPC.Application.pdb
+/home/luis/Desktop/Materias/cuatrimestre_6/elective-1/arquitecturaETL/ETL.SPC/ETL.SPC.Application/bin/Debug/net8.0/ETL.SPC.Domain.dll
+/home/luis/Desktop/Materias/cuatrimestre_6/elective-1/arquitecturaETL/ETL.SPC/ETL.SPC.Application/bin/Debug/net8.0/ETL.SPC.Domain.pdb
+/home/luis/Desktop/Materias/cuatrimestre_6/elective-1/arquitecturaETL/ETL.SPC/ETL.SPC.Application/obj/Debug/net8.0/ETL.SPC.Application.csproj.AssemblyReference.cache
+/home/luis/Desktop/Materias/cuatrimestre_6/elective-1/arquitecturaETL/ETL.SPC/ETL.SPC.Application/obj/Debug/net8.0/ETL.SPC.Application.GeneratedMSBuildEditorConfig.editorconfig
+/home/luis/Desktop/Materias/cuatrimestre_6/elective-1/arquitecturaETL/ETL.SPC/ETL.SPC.Application/obj/Debug/net8.0/ETL.SPC.Application.AssemblyInfoInputs.cache
+/home/luis/Desktop/Materias/cuatrimestre_6/elective-1/arquitecturaETL/ETL.SPC/ETL.SPC.Application/obj/Debug/net8.0/ETL.SPC.Application.AssemblyInfo.cs
+/home/luis/Desktop/Materias/cuatrimestre_6/elective-1/arquitecturaETL/ETL.SPC/ETL.SPC.Application/obj/Debug/net8.0/ETL.SPC.Application.csproj.CoreCompileInputs.cache
+/home/luis/Desktop/Materias/cuatrimestre_6/elective-1/arquitecturaETL/ETL.SPC/ETL.SPC.Application/obj/Debug/net8.0/ETL.SPC.Application.csproj.CopyComplete
+/home/luis/Desktop/Materias/cuatrimestre_6/elective-1/arquitecturaETL/ETL.SPC/ETL.SPC.Application/obj/Debug/net8.0/ETL.SPC.Application.dll
+/home/luis/Desktop/Materias/cuatrimestre_6/elective-1/arquitecturaETL/ETL.SPC/ETL.SPC.Application/obj/Debug/net8.0/refint/ETL.SPC.Application.dll
+/home/luis/Desktop/Materias/cuatrimestre_6/elective-1/arquitecturaETL/ETL.SPC/ETL.SPC.Application/obj/Debug/net8.0/ETL.SPC.Application.pdb
+/home/luis/Desktop/Materias/cuatrimestre_6/elective-1/arquitecturaETL/ETL.SPC/ETL.SPC.Application/obj/Debug/net8.0/ref/ETL.SPC.Application.dll

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "ETL.SPC.Pipeline/1.0.0": {
+        "runtime": {
+          "ETL.SPC.Pipeline.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ETL.SPC.Pipeline/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
