@@ -4,7 +4,7 @@ using ETL.SPC.Domain.Base;
 
 namespace ETL.SPC.Application.Extract.Database
 {
-    public class DbCommentExtractor : IExtractor<CommentRaw>
+    public class DbCommentExtractor //: IExtractor<CommentRaw>
     {
         private readonly IDbConnectionFactory _factory;
 
@@ -12,7 +12,7 @@ namespace ETL.SPC.Application.Extract.Database
         {
             _factory = factory;
         }
-
+        /*
         public async Task<IEnumerable<CommentRaw>> ExtractAsync()
         {
             using var conn = _factory.CreateConnection();
@@ -69,6 +69,25 @@ namespace ETL.SPC.Application.Extract.Database
             var result = await conn.QueryAsync<CommentRaw>(sql);
 
             return result;
+        } */
+        public async Task<IQueryable<CommentRaw>> ExtractAsync()
+        {
+            try
+            {
+                using var conn = _factory.CreateConnection();
+
+                const string sql = "SELECT * FROM vw_unified_feedback";
+
+                var result = await conn.QueryAsync<CommentRaw>(sql);
+
+                return result.AsQueryable();
+            }
+            catch (Exception ex)
+            {
+                // Log the exception or handle it as needed
+                Console.WriteLine($"Enviando correo al administrador: Error extracting comments: {ex.Message}");
+                return Enumerable.Empty<CommentRaw>().AsQueryable(); // Return an empty result in case of error
+            }
         }
     }
 }

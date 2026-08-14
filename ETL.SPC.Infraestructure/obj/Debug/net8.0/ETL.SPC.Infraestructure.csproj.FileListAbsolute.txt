@@ -15,3 +15,4 @@
 /home/luis/Desktop/Materias/cuatrimestre_6/elective-1/arquitecturaETL/ETL.SPC/ETL.SPC.Infraestructure/obj/Debug/net8.0/refint/ETL.SPC.Infraestructure.dll
 /home/luis/Desktop/Materias/cuatrimestre_6/elective-1/arquitecturaETL/ETL.SPC/ETL.SPC.Infraestructure/obj/Debug/net8.0/ETL.SPC.Infraestructure.pdb
 /home/luis/Desktop/Materias/cuatrimestre_6/elective-1/arquitecturaETL/ETL.SPC/ETL.SPC.Infraestructure/obj/Debug/net8.0/ref/ETL.SPC.Infraestructure.dll
+/home/luis/Desktop/Materias/cuatrimestre_6/elective-1/arquitecturaETL/ETL.SPC/ETL.SPC.Infraestructure/obj/Debug/net8.0/ETL.SPC.Infraestructure.sourcelink.json
