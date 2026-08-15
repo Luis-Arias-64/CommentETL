@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/Q7i9rKmz8vPj/tt0E0Axfp31TKhmxo75cUFuhUIop2EnmXDztAk8/qoC/86A2DLjA+Pr1G0ghmdHaMIwexfEQ==",
+  "dgSpecHash": "AL5Hx+aD3Y5tf0nNDtAFY1o4yU6U3xFr/lZZLu1vFXF2271AmDWEXb0dqr50OZx0e0ScD7UFwfebjUqu0LeJLA==",
   "success": true,
-  "projectFilePath": "/home/luis/Desktop/Materias/cuatrimestre_6/elective-1/arquitecturaETL/ETL.SPC/ETL.SPC.Pipeline/ETL.SPC.Pipeline.csproj",
+  "projectFilePath": "/home/luis/Desktop/ETL.SPC/ETL.SPC.Pipeline/ETL.SPC.Pipeline.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

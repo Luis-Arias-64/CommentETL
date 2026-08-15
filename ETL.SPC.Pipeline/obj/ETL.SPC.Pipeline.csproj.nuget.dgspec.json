@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/luis/Desktop/Materias/cuatrimestre_6/elective-1/arquitecturaETL/ETL.SPC/ETL.SPC.Pipeline/ETL.SPC.Pipeline.csproj": {}
+    "/home/luis/Desktop/ETL.SPC/ETL.SPC.Pipeline/ETL.SPC.Pipeline.csproj": {}
   },
   "projects": {
-    "/home/luis/Desktop/Materias/cuatrimestre_6/elective-1/arquitecturaETL/ETL.SPC/ETL.SPC.Pipeline/ETL.SPC.Pipeline.csproj": {
+    "/home/luis/Desktop/ETL.SPC/ETL.SPC.Pipeline/ETL.SPC.Pipeline.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/luis/Desktop/Materias/cuatrimestre_6/elective-1/arquitecturaETL/ETL.SPC/ETL.SPC.Pipeline/ETL.SPC.Pipeline.csproj",
+        "projectUniqueName": "/home/luis/Desktop/ETL.SPC/ETL.SPC.Pipeline/ETL.SPC.Pipeline.csproj",
         "projectName": "ETL.SPC.Pipeline",
-        "projectPath": "/home/luis/Desktop/Materias/cuatrimestre_6/elective-1/arquitecturaETL/ETL.SPC/ETL.SPC.Pipeline/ETL.SPC.Pipeline.csproj",
+        "projectPath": "/home/luis/Desktop/ETL.SPC/ETL.SPC.Pipeline/ETL.SPC.Pipeline.csproj",
         "packagesPath": "/home/luis/.nuget/packages/",
-        "outputPath": "/home/luis/Desktop/Materias/cuatrimestre_6/elective-1/arquitecturaETL/ETL.SPC/ETL.SPC.Pipeline/obj/",
+        "outputPath": "/home/luis/Desktop/ETL.SPC/ETL.SPC.Pipeline/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/luis/.nuget/NuGet/NuGet.Config"

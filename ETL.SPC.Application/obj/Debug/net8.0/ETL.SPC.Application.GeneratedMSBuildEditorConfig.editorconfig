@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ETL.SPC.Application
-build_property.ProjectDir = /home/luis/Desktop/Materias/cuatrimestre_6/elective-1/arquitecturaETL/ETL.SPC/ETL.SPC.Application/
+build_property.ProjectDir = /home/luis/Desktop/ETL.SPC/ETL.SPC.Application/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

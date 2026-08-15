@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/luis/Desktop/Materias/cuatrimestre_6/elective-1/arquitecturaETL/ETL.SPC/ETL.SPC.Infraestructure/ETL.SPC.Infraestructure.csproj": {}
+    "/home/luis/Desktop/ETL.SPC/ETL.SPC.Infraestructure/ETL.SPC.Infraestructure.csproj": {}
   },
   "projects": {
-    "/home/luis/Desktop/Materias/cuatrimestre_6/elective-1/arquitecturaETL/ETL.SPC/ETL.SPC.Application/ETL.SPC.Application.csproj": {
+    "/home/luis/Desktop/ETL.SPC/ETL.SPC.Application/ETL.SPC.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/luis/Desktop/Materias/cuatrimestre_6/elective-1/arquitecturaETL/ETL.SPC/ETL.SPC.Application/ETL.SPC.Application.csproj",
+        "projectUniqueName": "/home/luis/Desktop/ETL.SPC/ETL.SPC.Application/ETL.SPC.Application.csproj",
         "projectName": "ETL.SPC.Application",
-        "projectPath": "/home/luis/Desktop/Materias/cuatrimestre_6/elective-1/arquitecturaETL/ETL.SPC/ETL.SPC.Application/ETL.SPC.Application.csproj",
+        "projectPath": "/home/luis/Desktop/ETL.SPC/ETL.SPC.Application/ETL.SPC.Application.csproj",
         "packagesPath": "/home/luis/.nuget/packages/",
-        "outputPath": "/home/luis/Desktop/Materias/cuatrimestre_6/elective-1/arquitecturaETL/ETL.SPC/ETL.SPC.Application/obj/",
+        "outputPath": "/home/luis/Desktop/ETL.SPC/ETL.SPC.Application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/luis/.nuget/NuGet/NuGet.Config"
@@ -26,8 +26,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/luis/Desktop/Materias/cuatrimestre_6/elective-1/arquitecturaETL/ETL.SPC/ETL.SPC.Domain/ETL.SPC.Domain.csproj": {
-                "projectPath": "/home/luis/Desktop/Materias/cuatrimestre_6/elective-1/arquitecturaETL/ETL.SPC/ETL.SPC.Domain/ETL.SPC.Domain.csproj"
+              "/home/luis/Desktop/ETL.SPC/ETL.SPC.Domain/ETL.SPC.Domain.csproj": {
+                "projectPath": "/home/luis/Desktop/ETL.SPC/ETL.SPC.Domain/ETL.SPC.Domain.csproj"
               }
             }
           }
@@ -75,14 +75,14 @@
         }
       }
     },
-    "/home/luis/Desktop/Materias/cuatrimestre_6/elective-1/arquitecturaETL/ETL.SPC/ETL.SPC.Domain/ETL.SPC.Domain.csproj": {
+    "/home/luis/Desktop/ETL.SPC/ETL.SPC.Domain/ETL.SPC.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/luis/Desktop/Materias/cuatrimestre_6/elective-1/arquitecturaETL/ETL.SPC/ETL.SPC.Domain/ETL.SPC.Domain.csproj",
+        "projectUniqueName": "/home/luis/Desktop/ETL.SPC/ETL.SPC.Domain/ETL.SPC.Domain.csproj",
         "projectName": "ETL.SPC.Domain",
-        "projectPath": "/home/luis/Desktop/Materias/cuatrimestre_6/elective-1/arquitecturaETL/ETL.SPC/ETL.SPC.Domain/ETL.SPC.Domain.csproj",
+        "projectPath": "/home/luis/Desktop/ETL.SPC/ETL.SPC.Domain/ETL.SPC.Domain.csproj",
         "packagesPath": "/home/luis/.nuget/packages/",
-        "outputPath": "/home/luis/Desktop/Materias/cuatrimestre_6/elective-1/arquitecturaETL/ETL.SPC/ETL.SPC.Domain/obj/",
+        "outputPath": "/home/luis/Desktop/ETL.SPC/ETL.SPC.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/luis/.nuget/NuGet/NuGet.Config"
@@ -128,14 +128,14 @@
         }
       }
     },
-    "/home/luis/Desktop/Materias/cuatrimestre_6/elective-1/arquitecturaETL/ETL.SPC/ETL.SPC.Infraestructure/ETL.SPC.Infraestructure.csproj": {
+    "/home/luis/Desktop/ETL.SPC/ETL.SPC.Infraestructure/ETL.SPC.Infraestructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/luis/Desktop/Materias/cuatrimestre_6/elective-1/arquitecturaETL/ETL.SPC/ETL.SPC.Infraestructure/ETL.SPC.Infraestructure.csproj",
+        "projectUniqueName": "/home/luis/Desktop/ETL.SPC/ETL.SPC.Infraestructure/ETL.SPC.Infraestructure.csproj",
         "projectName": "ETL.SPC.Infraestructure",
-        "projectPath": "/home/luis/Desktop/Materias/cuatrimestre_6/elective-1/arquitecturaETL/ETL.SPC/ETL.SPC.Infraestructure/ETL.SPC.Infraestructure.csproj",
+        "projectPath": "/home/luis/Desktop/ETL.SPC/ETL.SPC.Infraestructure/ETL.SPC.Infraestructure.csproj",
         "packagesPath": "/home/luis/.nuget/packages/",
-        "outputPath": "/home/luis/Desktop/Materias/cuatrimestre_6/elective-1/arquitecturaETL/ETL.SPC/ETL.SPC.Infraestructure/obj/",
+        "outputPath": "/home/luis/Desktop/ETL.SPC/ETL.SPC.Infraestructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/luis/.nuget/NuGet/NuGet.Config"
@@ -150,11 +150,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/luis/Desktop/Materias/cuatrimestre_6/elective-1/arquitecturaETL/ETL.SPC/ETL.SPC.Application/ETL.SPC.Application.csproj": {
-                "projectPath": "/home/luis/Desktop/Materias/cuatrimestre_6/elective-1/arquitecturaETL/ETL.SPC/ETL.SPC.Application/ETL.SPC.Application.csproj"
+              "/home/luis/Desktop/ETL.SPC/ETL.SPC.Application/ETL.SPC.Application.csproj": {
+                "projectPath": "/home/luis/Desktop/ETL.SPC/ETL.SPC.Application/ETL.SPC.Application.csproj"
               },
-              "/home/luis/Desktop/Materias/cuatrimestre_6/elective-1/arquitecturaETL/ETL.SPC/ETL.SPC.Domain/ETL.SPC.Domain.csproj": {
-                "projectPath": "/home/luis/Desktop/Materias/cuatrimestre_6/elective-1/arquitecturaETL/ETL.SPC/ETL.SPC.Domain/ETL.SPC.Domain.csproj"
+              "/home/luis/Desktop/ETL.SPC/ETL.SPC.Domain/ETL.SPC.Domain.csproj": {
+                "projectPath": "/home/luis/Desktop/ETL.SPC/ETL.SPC.Domain/ETL.SPC.Domain.csproj"
               }
             }
           }

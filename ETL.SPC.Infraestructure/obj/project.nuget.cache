@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7aF134GF3PP/lFHXreeDxe3dsDPNPiW2cT6f/Qf1Pxmv3v8xveyVrjxf5CDsfckJiL1q6Rp0DAEn796pFi2Zww==",
+  "dgSpecHash": "cSPHnWDI8Gl2ASnNrmIoF3AcfoiOFhIgFX04qrUQX03y97KYcKjaMgt9tEI0k9ch0n6Oto1tflroW4uYt4hxZg==",
   "success": true,
-  "projectFilePath": "/home/luis/Desktop/Materias/cuatrimestre_6/elective-1/arquitecturaETL/ETL.SPC/ETL.SPC.Infraestructure/ETL.SPC.Infraestructure.csproj",
+  "projectFilePath": "/home/luis/Desktop/ETL.SPC/ETL.SPC.Infraestructure/ETL.SPC.Infraestructure.csproj",
   "expectedPackageFiles": [
     "/home/luis/.nuget/packages/csvhelper/33.0.1/csvhelper.33.0.1.nupkg.sha512",
     "/home/luis/.nuget/packages/dapper/2.1.35/dapper.2.1.35.nupkg.sha512",

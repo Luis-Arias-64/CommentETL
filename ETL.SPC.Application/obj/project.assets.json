@@ -467,11 +467,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/luis/Desktop/Materias/cuatrimestre_6/elective-1/arquitecturaETL/ETL.SPC/ETL.SPC.Application/ETL.SPC.Application.csproj",
+      "projectUniqueName": "/home/luis/Desktop/ETL.SPC/ETL.SPC.Application/ETL.SPC.Application.csproj",
       "projectName": "ETL.SPC.Application",
-      "projectPath": "/home/luis/Desktop/Materias/cuatrimestre_6/elective-1/arquitecturaETL/ETL.SPC/ETL.SPC.Application/ETL.SPC.Application.csproj",
+      "projectPath": "/home/luis/Desktop/ETL.SPC/ETL.SPC.Application/ETL.SPC.Application.csproj",
       "packagesPath": "/home/luis/.nuget/packages/",
-      "outputPath": "/home/luis/Desktop/Materias/cuatrimestre_6/elective-1/arquitecturaETL/ETL.SPC/ETL.SPC.Application/obj/",
+      "outputPath": "/home/luis/Desktop/ETL.SPC/ETL.SPC.Application/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/luis/.nuget/NuGet/NuGet.Config"
@@ -486,8 +486,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/home/luis/Desktop/Materias/cuatrimestre_6/elective-1/arquitecturaETL/ETL.SPC/ETL.SPC.Domain/ETL.SPC.Domain.csproj": {
-              "projectPath": "/home/luis/Desktop/Materias/cuatrimestre_6/elective-1/arquitecturaETL/ETL.SPC/ETL.SPC.Domain/ETL.SPC.Domain.csproj"
+            "/home/luis/Desktop/ETL.SPC/ETL.SPC.Domain/ETL.SPC.Domain.csproj": {
+              "projectPath": "/home/luis/Desktop/ETL.SPC/ETL.SPC.Domain/ETL.SPC.Domain.csproj"
             }
           }
         }
