@@ -1,4 +1,3 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
@@ -10,8 +9,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETL.SPC.Infraestructure", "ETL.SPC.Infraestructure\ETL.SPC.Infraestructure.csproj", "{FC54A708-480D-46AD-B2DD-529E9A605371}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETL.SPC.Pipeline", "ETL.SPC.Pipeline\ETL.SPC.Pipeline.csproj", "{02C02809-462B-446F-95E5-AF1074B6B042}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETL.SPC.Worker", "ETL.SPC.Worker\ETL.SPC.Worker.csproj", "{49AC8C63-3788-4D9F-BEFC-C0FBAAE10955}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +32,6 @@ Global
 		{02C02809-462B-446F-95E5-AF1074B6B042}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02C02809-462B-446F-95E5-AF1074B6B042}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02C02809-462B-446F-95E5-AF1074B6B042}.Release|Any CPU.Build.0 = Release|Any CPU
-		{49AC8C63-3788-4D9F-BEFC-C0FBAAE10955}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{49AC8C63-3788-4D9F-BEFC-C0FBAAE10955}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{49AC8C63-3788-4D9F-BEFC-C0FBAAE10955}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{49AC8C63-3788-4D9F-BEFC-C0FBAAE10955}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
