@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ETL.SPC.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+994581872cd3c69d1ecadfc6a535bc46c2204ef9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7067753161206e8fa4afbe71a14f306ece7486a8")]
 [assembly: System.Reflection.AssemblyProductAttribute("ETL.SPC.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ETL.SPC.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
